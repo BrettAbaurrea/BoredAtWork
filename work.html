@@ -1,0 +1,174 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>I'm supposed to be at Work</title>			
+	<!--css shit-->
+	<style>
+		body 
+		{
+			background-color: black;
+			text-align: center;
+		}
+		//not sure what this is but its for the sticky notes
+		*{
+  			margin:0;
+  			padding:0;
+		}
+		ul,li
+		{
+			list-style: none;
+		}
+		ul	
+		{
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		ul li a
+		{
+			text-decoration:none;
+			color: #000;
+			background: #feb;
+			display: block;
+			hieght: 10em;
+			width: 10em;
+			padding: 1em;
+			transform: rotate(-6deg);
+		}
+		ul li a:hover, ul lu a:focus
+		{
+			transform: scale(1.25);
+			position: relative;
+			z-index: 5;
+		}
+		h1
+		{
+			color: white;
+		}
+		p
+		{
+			color: white;
+		}
+		button
+		{
+			border-radius: 50%;
+			height: 500px;
+			width: 500px;
+			font-size: 36pt;
+			background-color: red;
+		}
+
+	</style>
+
+		<body>
+			<h1>Things to do when you're so bored at work.</h1>
+
+			//button clicker //gonna have it be called from another file but do not wanna rn				<p>you can press a button</p>
+
+
+			<!--script shit-->
+			<script>
+				var clickCount = 0;
+				//create button
+				// Create a button element
+      				const button = document.createElement('button')
+   				// Set the button text to 'Can you click me?'
+      				button.innerText = '._.'
+
+      				button.id = 'mainButton'
+
+      				// Attach the "click" event to your button
+      				button.addEventListener('click', () => {
+        			// When there is a "click"
+				clickCount++;
+				if (clickCount == 2)	//make this 25
+				{
+        				alert('You have Clicked ' + clickCount + ' times');
+				}
+
+				//changing colors
+				if (clickCount == 3)	//make this 30
+				{
+					button.style.backgroundColor = 'green';
+				}
+				if (clickCount == 4)	//make this 40
+				{
+					button.style.backgroundColor = 'blue';
+					//alert('WHOAH! I changed colors! Change me back?');
+				}
+				if (clickCount == 5)	//make this 41
+				{
+					//alert('oh no........');
+					button.style.backgroundColor = 'white';
+				}
+				if (clickCount == 6)	//make this 42
+				{
+					button.style.backgroundColor = 'purple';
+				}
+				if (clickCount == 7)	//make this 43
+				{
+					button.style.backgroundColor = 'brown';
+				}
+				if (clickCount == 8)	//make this 44
+				{
+					button.style.backgroundColor = 'yellow';
+				}
+				if (clickCount == 9)	//make this 45
+				{
+					button.style.backgroundColor = 'orange';
+				}
+				if (clickCount == 10)	//make this 46
+				{
+					button.style.backgroundColor = 'pink';
+				}
+				if (clickCount == 11)	//make this 47
+				{
+					button.style.backgroundColor = 'navy';
+				}
+				if (clickCount == 12)	//make this 48
+				{
+					button.style.backgroundColor = 'maroon';
+				}
+				if (clickCount == 13)	//make this 49
+				{
+					button.style.backgroundColor = 'gray';
+				}
+				if (clickCount == 14)	//make this 50
+				{
+					button.style.backgroundColor = 'red';
+				}
+				
+        			// it shows an alert in the browser
+
+      				})
+
+      				document.body.appendChild(button)
+			</script>
+			//Sticky Notes
+			<p>write notes to yourself: </p>
+			<ul>
+				<li>	
+					//this makes it user editable
+					<a href="#" contenteditable>								<h2>Note #1</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+					<a href="#" contenteditable>								<h2>Note #2</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+					<a href="#" contenteditable>								<h2>Note #3</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+					<a href="#" contenteditable>								<h2>Note #4</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+					<a href="#" contenteditable>								<h2>Note #5</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+					<a href="#" contenteditable>								<h2>Note #6</h2>
+						<p style="color: black;">Write your note here...</p>
+					</a>
+				</li>
+			</ul>
+			</body>
+	</html>
